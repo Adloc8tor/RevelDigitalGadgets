@@ -21,64 +21,6 @@ body
   height: __UP_rdH__px;
 }
 
-#data
-{
-  background-color: #__UP_BackColor__;
-  height: __UP_rdH__px;
-}
-
-#events table
-{
-  color: #__UP_ForeColor__;
-  width: __UP_rdW__px;
-}
-
-#events
-{
-  color: #__UP_ForeColor__;
-  width: __UP_rdW__px;
-}
-
-table, div#events
-{
-  width: __UP_rdW__px;
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-}
-
-td, th
-{
-  padding: 8px;
-}
-
-th
-{
-  __UP_header-style__;
-}
-
-td
-{
-  __UP_body-style__;
-}
-
-h2
-{
-  padding: 0;
-  margin: 0 0 10px 0;
-  font-weight: normal;
-  __UP_header-style__;
-}
-
-h3
-{
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  __UP_body-style__;
-}
-
 img
 {
   float: left;
@@ -86,22 +28,37 @@ img
   margin-right: 10px;
 }
 
-.entry
-{
-  padding: 20px 5px;
-  border-bottom: solid 1px #ccc;
-  clear:both;
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content /* for gutter border */ {
+	border-color: #ddd;
 }
 
-.when
-{
-  display:block;
-  opacity: 0.7;
-  margin-top: 2px;
-  font-weight: normal;
-  __UP_body-style__;
-  font-size: 80% !important;
+.fc-unthemed .fc-divider {
+	background: #eee;
 }
+
+.fc-highlight { /* when user is selecting cells */
+	background: #bce8f1;
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+}
+
+.fc-bgevent { /* default look for background events */
+	background: rgb(143, 223, 130);
+	opacity: .3;
+	filter: alpha(opacity=30); /* for IE */
+}
+
+.fc-nonbusiness { /* default look for non-business-hours areas */
+	/* will inherit .fc-bgevent's styles */
+	background: #d7d7d7;
+}
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
