@@ -145,7 +145,7 @@ img
     
     $('#calendar').fullCalendar({
         // put your options and callbacks here
-        googleCalendarApiKey: 'graeme@adloc8tor.com',
+        googleCalendarApiKey: 'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
         events: {
             googleCalendarId: 'graeme@adloc8tor.com'
         }
