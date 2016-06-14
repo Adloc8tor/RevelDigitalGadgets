@@ -309,10 +309,11 @@ hr.fc-divider {
           center: 'title',
           right:'',
         },
-        eventRender: function(event, element)
-	{
-    	  element.find('.fc-title').append("<br/>" + event.description); 
-	}
+//TODO: Append a description of the event if it exists.
+//        eventRender: function(event, element)
+//	{
+//    	  element.find('.fc-title').append("<br/>" + event.description); 
+//	}
     })
     
     update();
