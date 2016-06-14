@@ -308,7 +308,11 @@ hr.fc-divider {
           left: '',
           center: 'title',
           right:'',
-        }
+        },
+        eventRender: function(event, element)
+	{
+    		element.find('.fc-event-title').append("<br/>" + event.description); 
+	}
     })
     
     update();
