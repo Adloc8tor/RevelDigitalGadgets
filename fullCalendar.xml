@@ -157,7 +157,12 @@ img
                 googleCalendarId: 'oliver@adloc8tor.com',
                 className: 'oliver'
             }
-        ]
+        ],
+        header: {
+          left: 'title',
+          center: '',
+          right:'',
+        }
     })
     
     update();
