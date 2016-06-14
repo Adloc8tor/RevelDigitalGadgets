@@ -158,7 +158,7 @@ img
       queryParams += '&q=' + encodeURIComponent(prefs.getString("searchQuery"));
     }
     
-    var url = 'https://www.googleapis.com/calendar/v3/calendars/' + googleUrl(prefs.getString("calendarUrl")) + '/events?key=' + key + queryParams;
+    //var url = 'https://www.googleapis.com/calendar/v3/calendars/' + googleUrl(prefs.getString("calendarUrl")) + '/events?key=' + key + queryParams;
     
     //if (prefs.getString("displayFormat") != "table") {
     //  $("#events").empty();
@@ -199,60 +199,60 @@ img
 
   function formatDiv(event) {
 
-    var startDateTime = event.start.dateTime ? event.start.dateTime : event.start.date;
-    var endDateTime = event.end.dateTime ? event.end.dateTime : event.end.date;
+    //var startDateTime = event.start.dateTime ? event.start.dateTime : event.start.date;
+    //var endDateTime = event.end.dateTime ? event.end.dateTime : event.end.date;
     
-    var isAllDay = false;
-    if (startDateTime) {
-      if (event.start.date) {
-        isAllDay = true;
-      }
-    }
+    //var isAllDay = false;
+    //if (startDateTime) {
+    //  if (event.start.date) {
+    //    isAllDay = true;
+    //  }
+    //}
     
-    var div = $("<div class=\"entry\"></div>");
+   // var div = $("<div class=\"entry\"></div>");
     
-    if (event.attachments != null) {
-      var img = $("<img/>");
-      img.attr('src', 'https://www.googledrive.com/host/' + docIdFromUrl(event.attachments[0].fileUrl));
-      $(div).append(img);
-    }
+   // if (event.attachments != null) {
+   //   var img = $("<img/>");
+   //   img.attr('src', 'https://www.googledrive.com/host/' + docIdFromUrl(event.attachments[0].fileUrl));
+   //   $(div).append(img);
+   // }
     
-    var h2 = $("<h2></h2>");
-    h2.text(event.summary);
-    $(div).append(h2);
+    //var h2 = $("<h2></h2>");
+    //h2.text(event.summary);
+    //$(div).append(h2);
     
-    var h3 = $("<h3></h3>");
-    h3.text(event.location);
-    $(div).append(h3);
+    //var h3 = $("<h3></h3>");
+    //h3.text(event.location);
+    //$(div).append(h3);
     
-    var span = $("<span class=\"when\"></span>");
+    //var span = $("<span class=\"when\"></span>");
     
-    var sd = moment(startDateTime).format("__MSG_Calendar_DateFormat__");
-    var st = moment(startDateTime).format("__MSG_Calendar_TimeFormat__");
-    var et = moment(endDateTime).format("__MSG_Calendar_TimeFormat__");
-    if (isAllDay) {
-      var ed = moment(endDateTime).subtract(1, 'days').format("__MSG_Calendar_DateFormat__");
-    } else {
-      var ed = moment(endDateTime).format("__MSG_Calendar_DateFormat__");
-    }
+    //var sd = moment(startDateTime).format("__MSG_Calendar_DateFormat__");
+    //var st = moment(startDateTime).format("__MSG_Calendar_TimeFormat__");
+    //var et = moment(endDateTime).format("__MSG_Calendar_TimeFormat__");
+    //if (isAllDay) {
+    //  var ed = moment(endDateTime).subtract(1, 'days').format("__MSG_Calendar_DateFormat__");
+    //} else {
+    //  var ed = moment(endDateTime).format("__MSG_Calendar_DateFormat__");
+    //}
     
-    var time = '';
-    if (sd == ed) {
-      time += sd;
-    } else {
-      time += sd + " - " + ed;
-    }
-    if (isAllDay) {
-      span.text(time);
-    } else {
-      span.text(time + ", " + st + " - " + et);
-    }
+    //var time = '';
+    //if (sd == ed) {
+    //  time += sd;
+    //} else {
+    //  time += sd + " - " + ed;
+    //}
+    //if (isAllDay) {
+    //  span.text(time);
+    //} else {
+    //  span.text(time + ", " + st + " - " + et);
+    //}
     
-    $(h3).append(span);
+    //$(h3).append(span);
     
-    $(div).append("<div style=\"clear:both;\"></div>");
+    //$(div).append("<div style=\"clear:both;\"></div>");
     
-    $("#events").append(div);
+    //$("#events").append(div);
   }
 
   function formatTable(event) {
