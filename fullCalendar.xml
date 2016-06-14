@@ -162,6 +162,7 @@ img
               className: 'rory'
             }
         ],
+        eventColor: '#378006',
         header: {
           left: 'title',
           center: '',
