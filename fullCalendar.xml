@@ -302,19 +302,9 @@ hr.fc-divider {
     $('#calendar').fullCalendar({
         // put your options and callbacks here
         googleCalendarApiKey: 'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
-        eventSources: [
-            {
-                googleCalendarId: 'graeme@adloc8tor.com'
-            },
-            {
-                googleCalendarId: 'oliver@adloc8tor.com',
-                className: 'oliver'
-            },
-            {
-              googleCalendarId: 'rory@adloc8tor.com',
-              className: 'rory'
-            }
-        ],
+        events: {
+           googleCalendarId: 'graeme@adloc8tor.com'
+        },
         eventColor: '#378006',
         header: {
           left: '',
