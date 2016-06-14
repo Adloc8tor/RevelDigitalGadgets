@@ -301,9 +301,9 @@ hr.fc-divider {
     
     $('#calendar').fullCalendar({
         // put your options and callbacks here
-        googleCalendarApiKey: 'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
+        googleCalendarApiKey: prefs.getString("apiKey"), //'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
         events: {
-           googleCalendarId: 'graeme@adloc8tor.com'
+           googleCalendarId: prefs.getString("calendarID"), //'graeme@adloc8tor.com'
         },
         eventColor: '#378006',
         header: {
@@ -313,7 +313,7 @@ hr.fc-divider {
         },
         eventRender: function(event, element)
 	{
-    		element.find('.fc-event-title').append("<br/>" + event.description); 
+    	  element.find('.fc-event-title').append("<br/>" + event.description); 
 	}
     })
     
