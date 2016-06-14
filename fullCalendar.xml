@@ -156,6 +156,10 @@ img
             {
                 googleCalendarId: 'oliver@adloc8tor.com',
                 className: 'oliver'
+            },
+            {
+              googleCalendarId: 'rory@adloc8tor.com',
+              className: 'rory'
             }
         ],
         header: {
