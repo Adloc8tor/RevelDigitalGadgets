@@ -311,7 +311,7 @@ hr.fc-divider {
         },
         eventRender: function(event, element)
 	{
-    	  element.find('.fc-event-title').append("<br/>" + event.description); 
+    	  element.find('.fc-title').append("<br/>" + event.description); 
 	}
     })
     
