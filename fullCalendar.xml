@@ -53,6 +53,11 @@ img
   background-color: __UP_tableDayHeaderBackgroundColor__;
 }
 
+.fc-day {
+  color:__UP_tableTextColor__;
+  background-color: #000;
+}
+
 .fc-unthemed th,
 .fc-unthemed td,
 .fc-unthemed thead,
