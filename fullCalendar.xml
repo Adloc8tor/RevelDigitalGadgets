@@ -289,8 +289,20 @@ hr.fc-divider {
     if (typeof Client != "undefined" && typeof(Client.getDeviceTimeZoneName) == "function") {
       moment.tz.setDefault(Client.getDeviceTimeZoneName());
     }
-    
-    $('#calendar').fullCalendar({
+   
+   	// Update the content on the screen every 2 minutes.
+   	update();
+   	setInterval(update, 120000);
+   }
+
+  gadgets.util.registerOnLoadHandler(load);
+</script>
+
+<script type="text/javascript">
+  
+  function update() {
+  
+	$('#calendar').fullCalendar({
         // put your options and callbacks here
         googleCalendarApiKey: prefs.getString("apiKey"), //'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
         events: {
@@ -307,37 +319,7 @@ hr.fc-divider {
 //	{
 //    	  element.find('.fc-title').append("<br/>" + event.description); 
 //	}
-    })
-    
-    update();
-    
-    setInterval(update, 120000);
-  }
-
-  gadgets.util.registerOnLoadHandler(load);
-</script>
-
-<script type="text/javascript">
-  
-  function update() {
-  
-    var key = 'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8';
-    var queryParams = '&singleEvents=true&maxResults=' + prefs.getInt("maxResults") + '&orderBy=startTime';
-  
-    var dfMin = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.000ZZ");
-    var dfMax = new SimpleDateFormat("yyyy-MM-dd'T'23:59:59.000ZZ");
-
-    var tomorrow = new Date();
-    tomorrow.setDate(new Date().getDate() + prefs.getInt("futureEvents"));
-    var min = dfMin.format(new Date());
-    var max = dfMax.format(tomorrow);
-    
-    queryParams += '&timeMin=' + encodeURIComponent(min);
-    queryParams += '&timeMax=' + encodeURIComponent(max);
-    
-    if (prefs.getString("searchQuery") != '') {
-      queryParams += '&q=' + encodeURIComponent(prefs.getString("searchQuery"));
-    }
+    });
     
   }
 
