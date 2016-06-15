@@ -6,6 +6,7 @@
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
   	
+  	<UserPref name="tableBorderColor" display_name="Table Border Color" datatype="style" />
   	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/>
   	<UserPref name="body-style" display_name="Body Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:18px;" required="true"/>
   </ModulePrefs>
@@ -40,7 +41,7 @@ img
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-row,
 .fc-unthemed .fc-content /* for gutter border */ {
-	border-color: #ff0000;
+	border-color: __UP_tableBorderColor__;
 }
 
 .fc-unthemed .fc-divider {
