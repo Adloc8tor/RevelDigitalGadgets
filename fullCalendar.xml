@@ -7,7 +7,7 @@
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
   	
   	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />
-  	<UserPref name="tableTextColor" display_name="Table Text Colour" datatype="string" required="true" />
+  	<UserPref name="tableTextColor" display_name="Table Text Colour" datatype="string" required="true" default_value="#000000" />
   	<UserPref name="eventBackgroundColor" display_name="Event Background Colour" datatype="string" required="true" />
   	<UserPref name="eventTextColor" display_name="Event Text Colour" datatype="string" required="true" />
   	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/>
