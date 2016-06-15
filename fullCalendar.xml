@@ -310,7 +310,7 @@ hr.fc-divider {
         events: {
            googleCalendarId: prefs.getString("calendarID"), //'graeme@adloc8tor.com'
         },
-        eventColor: '#378006',
+       // eventColor: '#378006',
         header: {
           left: '',
           center: 'title',
