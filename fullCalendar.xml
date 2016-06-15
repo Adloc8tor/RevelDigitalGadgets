@@ -48,7 +48,7 @@ img
   text-align:center;
 }
 
-.fc > .fc-day-header {
+.fc-day-header {
   color: __UP_tableDayHeaderTextColor__;
   background-color: __UP_tableDayHeaderBackgroundColor__;
 }
