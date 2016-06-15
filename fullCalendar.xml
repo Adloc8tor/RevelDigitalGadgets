@@ -40,8 +40,8 @@ img
 }
 
 #calendar {
-	width:1000px;
-	height:500px;
+	width:100px;
+	height:50px;
 }
 
 .fc-unthemed th,
