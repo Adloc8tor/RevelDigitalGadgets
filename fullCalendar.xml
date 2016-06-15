@@ -39,11 +39,6 @@ img
   margin-right: 10px;
 }
 
-#calendar {
-	width:100px;
-	height:50px;
-}
-
 .fc-unthemed th,
 .fc-unthemed td,
 .fc-unthemed thead,
