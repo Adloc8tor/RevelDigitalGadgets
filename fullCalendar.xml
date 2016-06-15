@@ -131,11 +131,6 @@ hr.fc-divider {
 	font-size: 1em; /* normalize cross-browser */
 }
 
-table thead th.fc-day-header {
-	color: __UP_dayHeaderColor__;
-	color: __UP_dayHeaderBackgroundColor__;
-}
-
 .fc th {
 	text-align: center;
 }
