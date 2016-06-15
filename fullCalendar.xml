@@ -5,13 +5,12 @@
   	<Locale lang="ru" messages="https://adloc8tor.github.io/RevelDigitalGadgets/fullCalendar.lang.xml"/>
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
-  
+
+  	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />  
   	<UserPref name="tableHeadingTextColor" display_name="Calendar Heading Text Colour" datatype="string" />
   	<UserPref name="tableHeadingBackgroundColor" display_name="Calendar Heading Background Color" datatype="string" />
-
-  	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />
-	<UserPref name="tableDayHeaderTextColor" display_name="Day Header Colour" datatype="string" required="true" default_value="#000000" />
-	<UserPref name="tableDayHeaderBackgroundColor" display_name="Day Header Background Colour" datatype="string" required="true" default_value="#ffffff" />
+	<UserPref name="tableDayHeadingTextColor" display_name="Day Header Colour" datatype="string" required="true" default_value="#000000" />
+	<UserPref name="tableDayHeadingBackgroundColor" display_name="Day Header Background Colour" datatype="string" required="true" default_value="#ffffff" />
   	<UserPref name="eventBackgroundColor" display_name="Event Background Colour" datatype="string" required="true" />
   	<UserPref name="eventTextColor" display_name="Event Text Colour" datatype="string" required="true" />
   	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/>
@@ -54,8 +53,8 @@ img
 }
 
 .fc-day {
-  color:__UP_tableTextColor__;
-  background-color: #000;
+  color:__UP_tableDayHeadingTextColor__;
+  background-color: __UP_tableDayHeadingBackgroundColor__;
 }
 
 .fc-unthemed th,
