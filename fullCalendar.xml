@@ -6,7 +6,19 @@
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
-	<UserPref name="calendarHeading" display_name="Calendar Heading" datatype="style" required="true" />
+	<UserPref name="calendarHeadingStyle" display_name="Calendar Heading Style" datatype="style" required="true" />
+	<UserPref name="calendarHeadingBackground" display_name="Calendar Heading Background" datatype="string" required="true" />
+	
+	<UserPref name="dayOfWeekStyle" display_name="Day Of The Week Style" datatype="style" required="true" />
+	<UserPref name="dayOfWeekBackground" display_name="Day Of The Week Background" datatype="string" required="true" />
+	
+	<UserPref name="dayNumberStyle" display_name="Day Number Style" datatype="style" required="true" />
+
+	<UserPref name="borderStyle" display_name="Calendar Border Style" datatype="string" required="true" />
+	
+	<UserPref name="eventStyle" display_name="Event Style" datatype="style" required="true" />
+	<UserPref name="eventBackground" display_name="Event Background" datatype="string" required="true" />
+	
   	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />  
   	<UserPref name="tableHeadingTextColor" display_name="Calendar Heading Text Colour" datatype="string" />
   	<UserPref name="tableHeadingBackgroundColor" display_name="Calendar Heading Background Color" datatype="string" />
