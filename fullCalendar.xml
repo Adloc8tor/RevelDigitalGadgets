@@ -18,10 +18,6 @@
 	
 	<UserPref name="eventStyle" display_name="Event Style" datatype="style" required="true" />
 	<UserPref name="eventBackground" display_name="Event Background" datatype="string" required="true" />
-	
-
-<!--  	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/> -->
-<!--  	<UserPref name="body-style" display_name="Body Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:18px;" required="true"/> -->
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
@@ -60,7 +56,7 @@ __UP_dayOfWeekStyle__;
 
 .fc-day {
   color:__UP_tableDayHeadingTextColor__;
-  background-color: __UP_tableDayHeadingBackgroundColor__;
+  background-color: transparent;
 }
 
 .fc-unthemed th,
@@ -69,12 +65,12 @@ __UP_dayOfWeekStyle__;
 .fc-unthemed tbody,
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-row,
-.fc-unthemed .fc-content /* for gutter border */ {
-	border-color: __UP_tableBorderColor__;
+.fc-unthemed .fc-content {
+	border: 1px solid __UP_borderColor__;
 }
 
 .fc-unthemed .fc-divider {
-	background: #eee;
+/*	background: #eee; */
 }
 
 .fc-bgevent { /* default look for background events */
