@@ -5,7 +5,7 @@
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
-	<UserPref name="calendarHeadingStyle" display_name="Calendar Heading Style" datatype="style" required="true" />
+	<UserPref name="calendarHeadingStyle" display_name="Calendar Heading Style" datatype="style" required="true" default-value="font-family:'Arial';font-size:14px;color:#fff;" />
 	<UserPref name="calendarHeadingBackground" display_name="Calendar Heading Background" datatype="string" required="true" />
 	
 	<UserPref name="dayOfWeekStyle" display_name="Day Of The Week Style" datatype="style" required="true" />
@@ -44,12 +44,9 @@ img
 
 /* Table Headings */
 .fc .fc-toolbar .fc-center {
-  __UP_calendarHeading__;
+  __UP_calendarHeadingStyle__;
+  background-color: __UP_calendarHeadingBackground__;
   text-align:center;
-}
-
-.fc .fc-toolbar .fc-center {
-color:#f0f0f0;
 }
 
 .fc-day-header {
