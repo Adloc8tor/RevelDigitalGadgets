@@ -2,7 +2,6 @@
 <Module>
   <ModulePrefs title="RevelDigital Google Calendar Gadget" description="Lists your current Google Calendar events in chronological order" author="Adloc8tor" background="transparent">
   	<Locale messages="https://adloc8tor.github.io/RevelDigitalGadgets/fullCalendar.lang.xml"/>
-  	<Locale lang="ru" messages="https://adloc8tor.github.io/RevelDigitalGadgets/fullCalendar.lang.xml"/>
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
@@ -47,6 +46,10 @@ img
 .fc .fc-toolbar .fc-center {
   __UP_calendarHeading__;
   text-align:center;
+}
+
+.fc .fc-toolbar .fc-center {
+color:#f0f0f0;
 }
 
 .fc-day-header {
