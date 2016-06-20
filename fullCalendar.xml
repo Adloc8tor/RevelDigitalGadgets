@@ -6,6 +6,7 @@
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
+	<UserPref name="calendarHeading" display_name="Calendar Heading" datatype="style" required="true" />
   	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />  
   	<UserPref name="tableHeadingTextColor" display_name="Calendar Heading Text Colour" datatype="string" />
   	<UserPref name="tableHeadingBackgroundColor" display_name="Calendar Heading Background Color" datatype="string" />
@@ -42,8 +43,7 @@ img
 
 /* Table Headings */
 .fc .fc-toolbar .fc-center {
-  color: __UP_tableHeadingTextColor__;
-  background-color: __UP_tableHeadingBackgroundColor__;
+  __UP_calendarHeading__
   text-align:center;
 }
 
