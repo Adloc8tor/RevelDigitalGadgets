@@ -55,7 +55,7 @@ __UP_dayOfWeekStyle__;
 }
 
 .fc-day {
-  color:__UP_tableDayHeadingTextColor__;
+  __UP_dayOfWeekStyle__;
   background-color: transparent;
 }
 
@@ -70,7 +70,7 @@ __UP_dayOfWeekStyle__;
 }
 
 .fc-unthemed .fc-divider {
-/*	background: #eee; */
+	background: __UP_borderColor__;
 }
 
 .fc-bgevent { /* default look for background events */
@@ -173,23 +173,17 @@ hr.fc-divider {
 /* Global Event Styles
 --------------------------------------------------------------------------------------------------*/
 
-.fc-event {
+.fc-event,
+.fc-event:hover,
+.ui-widget .fc-event {
 	position: relative; /* for resize handle and other inner positioning */
 	display: block; /* make the <a> tag block */
 	font-size: .85em;
 	line-height: 1.3;
 	border-radius: 3px;
-	border: 1px solid __UP_eventBorderColor__; /* default BORDER color */
-	background-color: __UP_eventBorderColor__; /* default BACKGROUND color */
-	font-weight: normal; /* undo jqui's ui-widget-header bold */
-}
-
-/* overpower some of bootstrap's and jqui's styles on <a> tags */
-.fc-event,
-.fc-event:hover,
-.ui-widget .fc-event {
-	color: __UP_eventTextColor__; /* default TEXT color */
-	text-decoration: none; /* if <a> has an href */
+	border: 1px solid __UP_eventBackground__;
+	background-color: __UP_eventBackground__;
+	__UP_eventStyle__;
 }
 
 .fc-event[href],
