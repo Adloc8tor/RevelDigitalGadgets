@@ -14,7 +14,7 @@
 	
 	<UserPref name="dayNumberStyle" display_name="Day Number Style" datatype="style" required="true" />
 
-	<UserPref name="borderStyle" display_name="Calendar Border Style" datatype="string" required="true" />
+	<UserPref name="borderColor" display_name="Calendar Border Color" datatype="string" required="true" />
 	
 	<UserPref name="eventStyle" display_name="Event Style" datatype="style" required="true" />
 	<UserPref name="eventBackground" display_name="Event Background" datatype="string" required="true" />
@@ -55,13 +55,13 @@ img
 
 /* Table Headings */
 .fc .fc-toolbar .fc-center {
-  __UP_calendarHeading__
+  __UP_calendarHeading__;
   text-align:center;
 }
 
 .fc-day-header {
-  color: __UP_tableHeadingTextColor__;
-  background-color: __UP_tableHeadingBackgroundColor__;
+__UP_dayOfWeekStyle__;
+  background-color: __UP_dayOfWeekBackground__;
 }
 
 .fc-day {
