@@ -48,8 +48,8 @@ img
 }
 
 .fc-day-header {
-  color: __UP_tableDayHeaderTextColor__;
-  background-color: __UP_tableDayHeaderBackgroundColor__;
+  color: __UP_tableHeadingTextColor__;
+  background-color: __UP_tableHeadingBackgroundColor__;
 }
 
 .fc-day {
