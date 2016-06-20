@@ -19,15 +19,9 @@
 	<UserPref name="eventStyle" display_name="Event Style" datatype="style" required="true" />
 	<UserPref name="eventBackground" display_name="Event Background" datatype="string" required="true" />
 	
-  	<UserPref name="tableBorderColor" display_name="Table Border Colour" datatype="string" required="true" />  
-  	<UserPref name="tableHeadingTextColor" display_name="Calendar Heading Text Colour" datatype="string" />
-  	<UserPref name="tableHeadingBackgroundColor" display_name="Calendar Heading Background Color" datatype="string" />
-	<UserPref name="tableDayHeadingTextColor" display_name="Day Header Colour" datatype="string" required="true" default_value="#000000" />
-	<UserPref name="tableDayHeadingBackgroundColor" display_name="Day Header Background Colour" datatype="string" required="true" default_value="#ffffff" />
-  	<UserPref name="eventBackgroundColor" display_name="Event Background Colour" datatype="string" required="true" />
-  	<UserPref name="eventTextColor" display_name="Event Text Colour" datatype="string" required="true" />
-  	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/>
-  	<UserPref name="body-style" display_name="Body Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:18px;" required="true"/>
+
+<!--  	<UserPref name="header-style" display_name="Header Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:24px;text-align:left;" required="true"/> -->
+<!--  	<UserPref name="body-style" display_name="Body Style" datatype="style" default_value="font-family:Verdana;color:rgb(255, 255, 255);font-size:18px;" required="true"/> -->
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
