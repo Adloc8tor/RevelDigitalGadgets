@@ -5,10 +5,10 @@
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
-    <UserPref name="dateStyle" display_name="Date Style" datatype="style" required="true" default-value="font-size:132pt;" />
-    <UserPref name="dayOfWeekStyle" display_name="Day Of Week Style" datatype="style" required="true" default-value="font-size:32pt;" />    
-    <UserPref name="descriptionStyle" display_name="Description Style" datatype="style" required="true" default-value="" />
-    <UserPref name="bookedTimeStyle" display_name="Booked Time Style" datatype="style" required="true" default-value="" />
+    <UserPref name="DateStyle" display_name="Date Style" datatype="style" required="true" default-value="font-size:132pt;" />
+    <UserPref name="DayOfWeekStyle" display_name="Day Of Week Style" datatype="style" required="true" default-value="font-size:32pt;" />    
+    <UserPref name="DescriptionStyle" display_name="Description Style" datatype="style" required="true" default-value="" />
+    <UserPref name="BookedTimeStyle" display_name="Booked Time Style" datatype="style" required="true" default-value="" />
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
