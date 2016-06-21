@@ -40,10 +40,12 @@ span#dayOfWeek {
 }
 
 span#description {
+  display:block;
   __UP_DescriptionStyle__;
 }
 
 span#bookedTime {
+  display:block;
   __UP_BookedTimeStyle__;
 }
 
