@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs title="RevelDigital Google Calendar Gadget" description="Lists your current Google Calendar events in chronological order" author="Adloc8tor" background="transparent">
-  	<Locale messages="https://adloc8tor.github.io/RevelDigitalGadgets/fullCalendar.lang.xml"/>
+  	<Locale messages="https://adloc8tor.github.io/RevelDigitalGadgets/monthlyGoogleCalendar.lang.xml"/>
   	<UserPref name="apiKey" display_name="Google Developer Key" datatype="string" />
   	<UserPref name="calendarID" display_name="Google Calendar ID" datatype="string" />
 
