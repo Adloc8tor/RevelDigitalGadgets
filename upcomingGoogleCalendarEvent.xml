@@ -105,8 +105,10 @@ span#bookedTime {
       url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
       success: function(data,textStatus,jqXHR) {
   
+  $('span#bookedTime).html('it worked');
+  
   if(data.items == null || !(data.items instanceof Array) || data.items.length < 1) {
-  $('span#date').html(' ');
+    $('span#date').html(' ');
 		$('span#dayOfWeek').html('No future events planned');
   } else {
     var dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday'];
@@ -118,6 +120,9 @@ span#bookedTime {
   
   var endDate = new Date(data.items[0].end.dateTime);
   $('span#bookedTime').html(('0' + startDate.getHours()).slice(-2) + ":" + ('0' + startDate.getMinutes()).slice(-2) + ' - ' + ('0' + endDate.getHours()).slice(-2) + ":" + ('0' + endDate.getMinutes()).slice(-2));
+  },
+  error: function() {
+  $('span#bookedTime).html('it failed!!!!!!!!!!!');
   }
   
 
