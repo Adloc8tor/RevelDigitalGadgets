@@ -57,6 +57,7 @@ span#bookedTime {
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
 <div id="futureEvents">
+  Testing, Testing, 1...2...3...
   <span id="date"></span>
   <span id="dayOfWeek"></span>
   <span id="description"></span>
@@ -71,14 +72,14 @@ span#bookedTime {
     WebFont.load({
       google: {
         families: [
-          RevelDigital.getFamilyName(prefs.getString("header-style"))
+//          RevelDigital.getFamilyName(prefs.getString("header-style"))
         ]
       }
     });
     WebFont.load({
       google: {
         families: [
-          RevelDigital.getFamilyName(prefs.getString("body-style"))
+//          RevelDigital.getFamilyName(prefs.getString("body-style"))
         ]
       }
     });
@@ -91,6 +92,7 @@ span#bookedTime {
    	update();
    	setInterval(update, 120000);
    }
+   
   gadgets.util.registerOnLoadHandler(load);
 </script>
 <script type="text/javascript">
@@ -99,9 +101,9 @@ span#bookedTime {
     var currentDate = new Date();
 
     $.ajax({
-	type:'get',
-  url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
-  success: function(data,textStatus,jqXHR) {
+      type:'get',
+      url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
+      success: function(data,textStatus,jqXHR) {
   
   if(data.items == null || !(data.items instanceof Array) || data.items.length < 1) {
   $('span#date').html(' ');
