@@ -105,7 +105,7 @@ $.ajax({
   url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
   success: function(data,textStatus,jqXHR) {
   
-  if(data.items == null || data.items.length < 1) {
+  if(data.items == null || typeof data.items != 'array' || data.items.length < 1) {
   $('span#date').html(' ');
 		$('span#dayOfWeek').html('No future events planned');
   } else {
