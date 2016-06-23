@@ -50,13 +50,18 @@ img
 }
 
 .fc-day-header {
-__UP_dayOfWeekStyle__;
+  __UP_dayOfWeekStyle__;
   background-color: __UP_dayOfWeekBackground__;
 }
 
+.fc-day-number {
+  background-color:transparent;
+  __UP_dayNumberStyle__;
+}
+
 .fc-day {
-  __UP_dayOfWeekStyle__;
   background-color: transparent;
+  __UP_dayOfWeekStyle__;
 }
 
 .fc-unthemed th,
