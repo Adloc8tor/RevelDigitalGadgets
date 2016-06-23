@@ -106,6 +106,7 @@ $.ajax({
   success: function(data,textStatus,jqXHR) {
   
   if(data.items == null || data.items.length < 1) {
+  $('span#date').html(' ');
 		$('span#dayOfWeek').html('No future events planned');
   } else {
     var dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday'];
