@@ -92,12 +92,12 @@ span#bookedTime {
 //      }
 //    });
 
-moment.lang("__MSG_Lang__");
+//moment.lang("__MSG_Lang__");
    
     
-    if (typeof Client != "undefined" && typeof(Client.getDeviceTimeZoneName) == "function") {
-      moment.tz.setDefault(Client.getDeviceTimeZoneName());
-    }
+   // if (typeof Client != "undefined" && typeof(Client.getDeviceTimeZoneName) == "function") {
+   //   moment.tz.setDefault(Client.getDeviceTimeZoneName());
+   // }
    
    	// Update the content on the screen every 2 minutes.
    	update();
