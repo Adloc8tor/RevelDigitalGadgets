@@ -100,14 +100,14 @@ span#bookedTime {
   function update() {
     var currentDate = new Date();
 
-  $('span#bookedTime').html('update in progress');
+    $('span#bookedTime').html('update in progress');
 
     $.ajax({
       type:'get',
       url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
       success: function(data,textStatus,jqXHR) {
   
-  $('span#bookedTime').html('it worked');
+        $('span#bookedTime').html('it worked');
   
   if(data.items == null || !(data.items instanceof Array) || data.items.length < 1) {
     $('span#date').html(' ');
