@@ -96,16 +96,12 @@ span#bookedTime {
 <script type="text/javascript">
   
   function update() {
-  
+    var currentDate = new Date();
 
-var currentDate = new Date();
-console.log(currentDate.toISOString());
-$.ajax({
+    $.ajax({
 	type:'get',
   url:'https://www.googleapis.com/calendar/v3/calendars/adloc8tor.com_61rquem5odbvdn8es98nh0uedc@group.calendar.google.com/events?key=AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8&orderBy=startTime&singleEvents=true&timeMin=' + encodeURI(currentDate.toISOString()),
   success: function(data,textStatus,jqXHR) {
-  
-  console.log(typeof data.items);
   
   if(data.items == null || !(data.items instanceof Array) || data.items.length < 1) {
   $('span#date').html(' ');
