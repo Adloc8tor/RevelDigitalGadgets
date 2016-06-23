@@ -57,7 +57,7 @@ span#bookedTime {
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
 <div id="futureEvents">
-  Testing, Testing, 1...2...3...
+  <span style="color:#fff;">Testing, Testing, 1...2...3...</span><br />
   <span id="date"></span>
   <span id="dayOfWeek"></span>
   <span id="description"></span>
