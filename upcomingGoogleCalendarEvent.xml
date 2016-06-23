@@ -122,12 +122,10 @@ span#bookedTime {
   
   var endDate = new Date(data.items[0].end.dateTime);
   $('span#bookedTime').html(('0' + startDate.getHours()).slice(-2) + ":" + ('0' + startDate.getMinutes()).slice(-2) + ' - ' + ('0' + endDate.getHours()).slice(-2) + ":" + ('0' + endDate.getMinutes()).slice(-2));
+  }
   },
   error: function() {
   $('span#bookedTime').html('it failed!!!!!!!!!!!');
-  }
-  
-
   }
 });
 
