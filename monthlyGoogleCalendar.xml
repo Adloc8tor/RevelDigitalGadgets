@@ -330,12 +330,17 @@ hr.fc-divider {
         events: {
            googleCalendarId: prefs.getString("calendarID"), //'graeme@adloc8tor.com'
         },
-       // eventColor: '#378006',
         header: {
           left: '',
           center: 'title',
           right:'',
         },
+        eventLimit: true, // for all non-agenda views
+        views: {
+          agenda: {
+            eventLimit: 6 // adjust to 6 only for agendaWeek/agendaDay
+          }
+        }
 //TODO: Append a description of the event if it exists.
 //        eventRender: function(event, element)
 //	{
