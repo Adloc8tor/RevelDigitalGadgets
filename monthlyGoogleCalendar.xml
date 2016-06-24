@@ -354,9 +354,6 @@ hr.fc-divider {
 <script type="text/javascript">
   
   function update() {
-  
-    var currentDate = new Date();
-  
 	$('#calendar').fullCalendar({
         // put your options and callbacks here
         googleCalendarApiKey: prefs.getString("apiKey"), //'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
@@ -368,12 +365,7 @@ hr.fc-divider {
           center: 'title',
           right:'',
         },
-        eventLimit: 3,
-        agenda: {
-          scrollTime: "" + currentDate.getHours() + ":"  
-                + currentDate.getMinutes() + ":" 
-                + currentDate.getSeconds(),
-        }
+        eventLimit: 3f
     });
     
   }
