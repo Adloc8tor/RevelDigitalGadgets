@@ -353,12 +353,7 @@ hr.fc-divider {
           center: 'title',
           right:'',
         },
-        eventLimit: true, // for all non-agenda views
-        views: {
-          agenda: {
-            eventLimit: 3 // adjust to 6 only for agendaWeek/agendaDay
-          }
-        }
+        eventLimit: 3,
     });
     
   }
