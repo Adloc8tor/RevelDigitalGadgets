@@ -338,7 +338,7 @@ hr.fc-divider {
         eventLimit: true, // for all non-agenda views
         views: {
           agenda: {
-            eventLimit: 6 // adjust to 6 only for agendaWeek/agendaDay
+            eventLimit: 3 // adjust to 6 only for agendaWeek/agendaDay
           }
         }
 //TODO: Append a description of the event if it exists.
