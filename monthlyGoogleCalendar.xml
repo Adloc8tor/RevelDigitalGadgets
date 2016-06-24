@@ -86,6 +86,10 @@ img
   display:none;
 }
 
+.fc-widget-content {
+  height:900px;
+}
+
 .fc-unthemed th,
 .fc-unthemed td,
 .fc-unthemed thead,
