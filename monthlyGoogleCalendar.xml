@@ -70,6 +70,10 @@ img
    height:180px;
 }
 
+.fc-event-container {
+  height:50px;
+}
+
 .fc-day-grid-event {
   height:50px;
 }
