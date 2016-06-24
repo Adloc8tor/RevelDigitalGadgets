@@ -12050,7 +12050,7 @@ var MonthView = FC.MonthView = BasicView.extend({
 		// ensure 6 weeks
 		if (this.isFixedWeeks()) {
 			rowCnt = Math.ceil(range.end.diff(range.start, 'weeks', true)); // could be partial weeks due to hiddenDays
-			range.end.add(6 - rowCnt, 'weeks');
+			range.end.add(5 - rowCnt, 'weeks');
 		}
 
 		return range;
