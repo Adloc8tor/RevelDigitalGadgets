@@ -346,11 +346,6 @@ hr.fc-divider {
             eventLimit: 3 // adjust to 6 only for agendaWeek/agendaDay
           }
         }
-//TODO: Append a description of the event if it exists.
-//        eventRender: function(event, element)
-//	{
-//    	  element.find('.fc-title').append("<br/>" + event.description); 
-//	}
     });
     
   }
