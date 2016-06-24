@@ -67,19 +67,19 @@ img
 /* Fix the height of the event container to give a more consisten appearance. 150px is tall enough to handle 3 events a day. */
 
 .fc-content-skeleton {
-   height:180px;
+/*   height:180px; */
 }
 
 .fc-event-container {
-  height:50px;
+/*  height:50px; */
 }
 
 .fc-event .fc-content {
-  height:50px;
+/*  height:50px; */
 }
 
 .fc-day-grid-event {
-  height:50px;
+/*  height:50px; */
 }
 
 .fc-unthemed th,
