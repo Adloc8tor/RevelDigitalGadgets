@@ -86,9 +86,13 @@ img
   display:none;
 }
 
-.fc-day-grid-container,
-.fc-widget-content {
+div.fc-day-grid-container,
+td.fc-widget-content {
   height:900px;
+}
+
+div.fc-row.fc-week.fc-widget-content {
+  height:180px;
 }
 
 .fc-unthemed th,
