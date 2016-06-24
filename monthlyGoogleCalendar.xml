@@ -88,7 +88,7 @@ img
 
 div.fc-day-grid-container,
 td.fc-widget-content {
-  height:900px;
+  height:900px !important;
 }
 
 div.fc-row.fc-week.fc-widget-content {
