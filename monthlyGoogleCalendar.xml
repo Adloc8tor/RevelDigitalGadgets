@@ -86,6 +86,7 @@ img
   display:none;
 }
 
+.fc-day-grid-container,
 .fc-widget-content {
   height:900px;
 }
