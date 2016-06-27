@@ -320,6 +320,23 @@ hr.fc-divider {
 
   var prefs = new gadgets.Prefs();
   
+    function update() {
+	$('#calendar').fullCalendar({
+        // put your options and callbacks here
+        googleCalendarApiKey: prefs.getString("apiKey"), //'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
+        events: {
+           googleCalendarId: prefs.getString("calendarID"), //'graeme@adloc8tor.com'
+        },
+        header: {
+          left: '',
+          center: 'title',
+          right:'',
+        },
+        eventLimit: 3
+    });
+    
+  }
+  
   function load() {
     
     WebFont.load({
@@ -349,27 +366,6 @@ hr.fc-divider {
    }
 
   gadgets.util.registerOnLoadHandler(load);
-</script>
-
-<script type="text/javascript">
-  
-  function update() {
-	$('#calendar').fullCalendar({
-        // put your options and callbacks here
-        googleCalendarApiKey: prefs.getString("apiKey"), //'AIzaSyDN8dkir1si9vMwWJYz64YCsUIhFustgL8',
-        events: {
-           googleCalendarId: prefs.getString("calendarID"), //'graeme@adloc8tor.com'
-        },
-        header: {
-          left: '',
-          center: 'title',
-          right:'',
-        },
-        eventLimit: 3
-    });
-    
-  }
-
 </script>
 
 ]]>
