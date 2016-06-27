@@ -365,7 +365,7 @@ hr.fc-divider {
           center: 'title',
           right:'',
         },
-        eventLimit: 3f
+        eventLimit: 3
     });
     
   }
