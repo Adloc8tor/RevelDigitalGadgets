@@ -95,6 +95,10 @@ div.fc-row.fc-week.fc-widget-content {
   height:180px;
 }
 
+a.fc-event div.fc-content {
+  border:0;
+}
+
 .fc-unthemed th,
 .fc-unthemed td,
 .fc-unthemed thead,
