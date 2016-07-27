@@ -68,6 +68,7 @@ span#bookedTime {
   <span id="date"></span>
   <span id="dayOfWeek"></span>
   <span id="description"></span>
+  <span id="fulldesc"></span>
   <span id="bookedTime"></span>
 </div>
 
@@ -124,7 +125,10 @@ span#bookedTime {
           $('span#date').html(startDate.getDate());
           $('span#dayOfWeek').html(dayOfWeek[startDate.getDay()]);
           $('span#description').html(data.items[0].summary);
-  
+  	
+  		  if(data.items[0].description != null) {
+		  	$('span#fulldesc').html(data.items[0].description);
+		  }
           var endDate = new Date(data.items[0].end.dateTime);
           $('span#bookedTime').html(('0' + startDate.getHours()).slice(-2) + ":" + ('0' + startDate.getMinutes()).slice(-2) + ' - ' + ('0' + endDate.getHours()).slice(-2) + ":" + ('0' + endDate.getMinutes()).slice(-2));
         }
