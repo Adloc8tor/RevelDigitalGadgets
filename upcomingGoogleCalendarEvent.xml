@@ -48,6 +48,7 @@ span#description {
 span#bookedTime {
   display:block;
   __UP_BookedTimeStyle__;
+  color: #000000;
 }
 
 </style>
