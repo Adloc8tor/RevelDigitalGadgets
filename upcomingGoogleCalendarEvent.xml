@@ -15,7 +15,7 @@
 <style type="text/css">
 body *
 {
-  line-height: 1.2em; 
+  line-height: 1.0em; 
   letter-spacing: 0; 
   word-spacing: normal;
 }
@@ -67,10 +67,10 @@ span#bookedTime {
 
 <div id="futureEvents">
   <span id="date"></span>
-  <span id="dayOfWeek"></span>
+  <span id="dayOfWeek" style="margin-top: -20px;"></span>
   <span id="description"></span>
   <span id="fulldesc"></span>
-  <span id="bookedTime"></span>
+  <span id="bookedTime" style="color: #000000;"></span>
 </div>
 
 <script type="text/javascript">
