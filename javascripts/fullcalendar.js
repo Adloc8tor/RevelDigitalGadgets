@@ -6112,12 +6112,10 @@ DayGrid.mixin({
 				timeHtml = '<span class="fc-time">' + htmlEscape(timeText) + '</span>';
 			}
 		}
-		var length = 30;
-		var itemtoChange = (htmlEscape(event.title || '') || '...&nbsp;');
-		var subjectItem = itemtoChange.substring(0,length);
+		
 		titleHtml =
 			'<span class="fc-title">' +
-				 subjectItem + // we always want one line of height
+				(htmlEscape(event.title || '') || '&nbsp;') + // we always want one line of height
 			'</span>';
 		
 		return '<a class="' + classes.join(' ') + '"' +
