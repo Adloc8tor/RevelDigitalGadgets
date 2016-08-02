@@ -68,9 +68,9 @@ span#bookedTime {
 <div id="futureEvents">
   <span id="date"></span>
   <span id="dayOfWeek" style="margin-top: -20px;"></span>
-  <span id="description"></span>
-  <span id="fulldesc" style="width: 800px;"></span>
-  <span id="bookedTime" style="color: #000000;"></span>
+  <span id="description" style="margin-top: 10px;"></span>
+  <span id="fulldesc" style="width: 800px; margin-top: 10px;"></span>
+  <span id="bookedTime" style="color: #F691B2; margin-top: 10px;"></span>
 </div>
 
 <script type="text/javascript">
