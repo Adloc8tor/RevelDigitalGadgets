@@ -333,7 +333,7 @@ hr.fc-divider {
         },
         header: {
           left: '',
-          center: 'title.substring(0, 30)',
+          center: 'title',
           right:'',
         },
         eventLimit: 3
