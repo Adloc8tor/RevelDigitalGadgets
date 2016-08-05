@@ -69,7 +69,7 @@ span#bookedTime {
   <span id="date" style="margin-top: -15px;"></span>
   <span id="dayOfWeek" style="margin-top: -30px;"></span>
   <span id="description" style="margin-top: 10px;"></span><br />
-  <span id="fulldesc" style="width: 800px; margin-top: 0px;"></span>
+  <span id="fulldesc" style="width: 800px; margin-top: -10px;"></span>
   <span id="bookedTime" style="color: #F691B2; margin-top: 10px;"></span>
 </div>
 
