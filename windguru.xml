@@ -3,6 +3,10 @@
   <ModulePrefs title="WindGuru" description="Displays a WindGuru feed" author="Adloc8tor" background="transparent">
   	<!--<Locale messages="https://adloc8tor.github.io/RevelDigitalGadgets/monthlyGoogleCalendar.lang.xml"/>-->
     <UserPref name="SiteID" display_name="WindGuru Site ID" datatype="string" required="true" default-value="467248"/>
+    <UserPref name="paramWindSpeed" display_name="Wind Speed" datatype="bool" default_value="true" />
+    <UserPref name="paramWindGusts" display_name="Wind Gusts" datatype="bool" default_value="true" />
+    <UserPref name="paramWindDirection" display_name="Wind Direction" datatype="bool" default_value="true" />
+    <UserPref name="paramTemperature" display_name="Temperature" datatype="bool" default_value="true" />
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
@@ -37,6 +41,16 @@ body
 <div id="wg_target_div_467248_50466941"></div>
 
 <script language="JavaScript" type="text/javascript">
+
+var gadgetPrefs = new gadgets.Prefs();
+
+var params = [];
+
+if (gadgetPrefs.getBool("paramWindSpeed") == true)
+{
+  params.append('WINDSPD')
+}
+
 WgWidget({
 s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
 params: ['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs'],
