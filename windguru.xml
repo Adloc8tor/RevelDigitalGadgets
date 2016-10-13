@@ -2,11 +2,24 @@
 <Module>
   <ModulePrefs title="WindGuru" description="Displays a WindGuru feed" author="Adloc8tor" background="transparent">
   	<!--<Locale messages="https://adloc8tor.github.io/RevelDigitalGadgets/monthlyGoogleCalendar.lang.xml"/>-->
-    <UserPref name="SiteID" display_name="WindGuru Site ID" datatype="string" required="true" default-value="467248"/>
-    <UserPref name="paramWindSpeed" display_name="Wind Speed" datatype="bool" default_value="true" />
-    <UserPref name="paramWindGusts" display_name="Wind Gusts" datatype="bool" default_value="true" />
-    <UserPref name="paramWindDirection" display_name="Wind Direction" datatype="bool" default_value="true" />
-    <UserPref name="paramTemperature" display_name="Temperature" datatype="bool" default_value="true" />
+    <UserPref name="SiteID" display_name="WindGuru site ID" datatype="string" required="true" default-value="467248"/>
+    <UserPref name="paramWindSpeed" display_name="Wind speed" datatype="bool" default_value="true" />
+    <UserPref name="paramWindGusts" display_name="Wind gusts" datatype="bool" default_value="true" />
+    <UserPref name="paramWindDirection" display_name="Wind direction" datatype="bool" default_value="true" />
+    <UserPref name="paramTemperature" display_name="Temperature (C)" datatype="bool" default_value="true" />
+    <UserPref name="paramWave" display_name="Wave" datatype="bool" default_value="true" />
+    <UserPref name="paramWaveDirection" display_name="Wave direction" datatype="bool" default_value="true" />
+    <UserPref name="paramWavePeriod" display_name="Wave period (s)" datatype="bool" default_value="true" />
+    <UserPref name="paramPressure" display_name="Pressure (hPa)" datatype="bool" default_value="true" />
+    <UserPref name="paramPrecipitation" display_name="Precipitation (mm/3h)" datatype="bool" default_value="true" />
+    <UserPref name="paramWindGuruRating" display_name="WindGuru rating" datatype="bool" default_value="false" />
+    <UserPref name="paramHumidity" display_name="Humidity (%)" datatype="bool" default_value="false" />
+    <UserPref name="paramModifWind" display_name="Modif. wind" datatype="bool" default_value="false" />
+    <UserPref name="paramWindChill" display_name="Wind chill" datatype="bool" default_value="false" />
+    <UserPref name="paramIsotherm" display_name="0 isotherm" datatype="bool" default_value="false" />
+    <UserPref name="paramCloudCover" display_name="Cloud cover (%)" datatype="bool" default_value="false" />
+    <UserPref name="paramCloudCoverHiMedLo" display_name="Cloud cover (%) Hi/Med/Lo" datatype="bool" default_value="false" />
+
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
@@ -54,8 +67,62 @@ if (gadgetPrefs.getBool('paramWindGusts') == true)
 {
   params.push('GUST')
 }
-
-//['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs']
+if (gadgetPrefs.getBool('paramWindDirection') == true)
+{
+  params.push('SMER');
+}
+if (gadgetPrefs.getBool('paramTemperature') == true)
+{
+  params.push('TMPE');
+}
+if (gadgetPrefs.getBool('paramWave') == true)
+{
+  params.push('HTSGW');
+}
+if (gadgetPrefs.getBool('paramWaveDirection') == true)
+{
+  params.push('WAVESMER');
+}
+if (gadgetPrefs.getBool('paramWindPeriod') == true)
+{
+  params.push('PERPW');
+}
+if (gadgetPrefs.getBool('paramPressure') == true)
+{
+  params.push('SLP');
+}
+if (gadgetPrefs.getBool('paramPrecipitation') == true)
+{
+  params.push('APCPs');
+}
+if (gadgetPrefs.getBool('paramWindGuruRating') == true)
+{
+  params.push('RATING');
+}
+if (gadgetPrefs.getBool('paramHumidity') == true)
+{
+  params.push('RH');
+}
+if (gadgetPrefs.getBool('paramModifWind') == true)
+{
+  params.push('MWINDSPD');
+}
+if (gadgetPrefs.getBool('paramWindChill') == true)
+{
+  params.push('WCHILL');
+}
+if (gadgetPrefs.getBool('paramIsotherm') == true)
+{
+  params.push('FLHGT');
+}
+if (gadgetPrefs.getBool('paramCloudCover') == true)
+{
+  params.push('TCDC');
+}
+if (gadgetPrefs.getBool('paramCloudCoverHiMedLo') == true)
+{
+  params.push('CDC');
+}
 
 WgWidget({
 s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
