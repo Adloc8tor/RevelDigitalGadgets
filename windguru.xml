@@ -20,6 +20,8 @@
     <UserPref name="paramCloudCover" display_name="Cloud cover (%)" datatype="bool" default_value="false" />
     <UserPref name="paramCloudCoverHiMedLo" display_name="Cloud cover (%) Hi/Med/Lo" datatype="bool" default_value="false" />
 
+    <UserPref name="paramForecastLength" display_name="Forecast length (hours)" datatype="string" default_value="72" required="true" />
+
   </ModulePrefs>
   <Content type="html">
 <![CDATA[
@@ -125,7 +127,7 @@ if (gadgetPrefs.getBool('paramCloudCoverHiMedLo') == true)
 }
 
 WgWidget({
-s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
+s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:gadgetPrefs.getBool('paramForecastLength'), lng:'en',
 params: params,
 first_row:true,
 spotname:true,
