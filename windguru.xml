@@ -48,11 +48,11 @@ var params = [];
 
 if (gadgetPrefs.getBool("paramWindSpeed") == true)
 {
-  params.append('WINDSPD')
+  params.push('WINDSPD')
 }
 if (gadgetPrefs.getBool('paramWindGusts') == true)
 {
-  params.append('GUST')
+  params.push('GUST')
 }
 
 //['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs']
