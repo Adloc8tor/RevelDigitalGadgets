@@ -32,12 +32,12 @@ body
 <script src="https://reveldigital.github.io/reveldigital-gadgets/third-party/autoscroll.js" type="text/javascript"></script>
 <script src="https://reveldigital.github.io/gadget-common/utils.js" type="text/javascript"></script>
 
-<script src="https://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
+<script src="http://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
 <script language="JavaScript" type="text/javascript">
-
+//<![CDATA[
 WgWidget({
 s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
-params: ['WINDSPD','GUST','SMER','TMPE','CDC','APCPs'],
+params: ['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs'],
 first_row:true,
 spotname:true,
 first_row_minfo:true,
@@ -48,11 +48,11 @@ sun:true,
 link_archive:false,
 link_new_window:false
 },
-'wg_target_div_467248_50466941'
+'wg_target_div_467248_96502884'
 );
-
+//]]>
 </script>
-<div id="wg_target_div_467248_50466941"></div>
+<div id="wg_target_div_467248_96502884"></div>
 
 ]]>
 </Content></Module>
