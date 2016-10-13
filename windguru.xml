@@ -5,54 +5,5 @@
     <UserPref name="SiteID" display_name="WindGuru Site ID" datatype="string" required="true" default-value="467248"/>
   </ModulePrefs>
   <Content type="html">
-<![CDATA[
-<style type="text/css">
-body *
-{
-  line-height: 1.2em; 
-  letter-spacing: 0; 
-  word-spacing: normal;
-}
-body
-{
-  overflow: hidden;
-  background: transparent;
-}
 
-</style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
-<script src="https://reveldigital.github.io/reveldigital-gadgets/third-party/moment-with-langs.min.js" type="text/javascript"></script>
-<script src="https://reveldigital.github.io/reveldigital-gadgets/third-party/moment-timezone-with-data.js" type="text/javascript"></script>
-<script src="https://reveldigital.github.io/reveldigital-gadgets/third-party/simpledateformat.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenLite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/utils/Draggable.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/plugins/CSSPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/plugins/ScrollToPlugin.min.js"></script>
-<script src="https://reveldigital.github.io/reveldigital-gadgets/third-party/autoscroll.js" type="text/javascript"></script>
-<script src="https://reveldigital.github.io/gadget-common/utils.js" type="text/javascript"></script>
-
-<script src="https://widget.windguru.cz/js/wg_widget.php" type="text/javascript"></script>
-<script language="JavaScript" type="text/javascript">
-
-WgWidget({
-s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
-params: ['WINDSPD','GUST','SMER','TMPE','CDC','APCPs'],
-first_row:true,
-spotname:true,
-first_row_minfo:true,
-last_row:true,
-lat_lon:true,
-tz:true,
-sun:true,
-link_archive:false,
-link_new_window:false
-},
-'wg_target_div_467248_50466941'
-);
-
-</script>
-<div id="wg_target_div_467248_50466941"></div>
-
-]]>
 </Content></Module>
