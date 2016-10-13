@@ -50,10 +50,16 @@ if (gadgetPrefs.getBool("paramWindSpeed") == true)
 {
   params.append('WINDSPD')
 }
+if (gadgetPrefs.getBool('paramWindGusts') == true)
+{
+  params.append('GUST')
+}
+
+//['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs']
 
 WgWidget({
 s: __UP_SiteID__, odh:0, doh:24, wj:'knots', tj:'c', waj:'m', fhours:72, lng:'en',
-params: ['WINDSPD','GUST','SMER','TMPE','HTSGW','WAVESMER','PERPW','SLP','APCPs'],
+params: params,
 first_row:true,
 spotname:true,
 first_row_minfo:true,
