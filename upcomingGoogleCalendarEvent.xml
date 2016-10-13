@@ -15,7 +15,7 @@
 <style type="text/css">
 body *
 {
-  line-height: 1.2em; 
+  line-height: 1.0em; 
   letter-spacing: 0; 
   word-spacing: normal;
 }
@@ -48,6 +48,7 @@ span#description {
 span#bookedTime {
   display:block;
   __UP_BookedTimeStyle__;
+  color: #000000;
 }
 
 </style>
@@ -65,10 +66,11 @@ span#bookedTime {
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
 <div id="futureEvents">
-  <span id="date"></span>
-  <span id="dayOfWeek"></span>
-  <span id="description"></span>
-  <span id="bookedTime"></span>
+  <span id="date" style="margin-top: -15px;"></span>
+  <span id="dayOfWeek" style="margin-top: -30px;"></span>
+  <span id="description" style="margin-top: 10px; margin-bottom: 0px;"></span><br />
+  <span id="fulldesc" style="width: 800px;"></span><br /><br />
+  <span id="bookedTime" style="color: #000000;"></span>
 </div>
 
 <script type="text/javascript">
@@ -124,7 +126,10 @@ span#bookedTime {
           $('span#date').html(startDate.getDate());
           $('span#dayOfWeek').html(dayOfWeek[startDate.getDay()]);
           $('span#description').html(data.items[0].summary);
-  
+  	
+  		  if(data.items[0].description != null) {
+		  	$('span#fulldesc').html(data.items[0].description);
+		  }
           var endDate = new Date(data.items[0].end.dateTime);
           $('span#bookedTime').html(('0' + startDate.getHours()).slice(-2) + ":" + ('0' + startDate.getMinutes()).slice(-2) + ' - ' + ('0' + endDate.getHours()).slice(-2) + ":" + ('0' + endDate.getMinutes()).slice(-2));
         }
